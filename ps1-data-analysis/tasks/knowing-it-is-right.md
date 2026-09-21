@@ -4,8 +4,6 @@ Follow-up questions on Problem Set 1, drawn largely from `QUESTIONS.md`. Answer 
 three sentences. None of them needs you to run code. One asks about a choice you made in task
 3; the rest can be answered by anyone who did the assignment.
 
-A practice draw takes 1 or more of these.
-
 ### q-missing-filter
 
 On PS1, Task 1 keeps only movies with at least 50 ratings. If that filter were missing, what would the
