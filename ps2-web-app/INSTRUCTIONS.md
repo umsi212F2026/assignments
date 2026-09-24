@@ -33,10 +33,9 @@ localhost.
 **Use SQLite unless you have a reason not to.** There is nothing to install and nothing to start. Anything else
 is fine if the whole app still starts with one command.
 
-## The two things that are fixed
+## The three things that are fixed
 
-Everything else about how you organize this is yours. These two are not, because a program runs
-them.
+Everything else about how you organize this is yours. These three are not.
 
 ### `npm test` runs your tests, from this folder
 
@@ -61,15 +60,18 @@ way.
 
 ## What you hand in
 
-Everything lives in this folder.
+Everything lives in this folder, with one exception, and the exception is the design file.
 
-| file                                 | what it is                                                                        |
-| ------------------------------------ | --------------------------------------------------------------------------------- |
-| the app                              | source, organized however you and your agent see fit                              |
-| `docs/superpowers/specs/*-design.md` | the design spec you approved before any code was written, as Superpowers saved it |
-| `README.md`                          | what the app is, how to start it, how to exercise the main features               |
-| `REFLECTION.md`                      | five questions, answered by hand. The template is in this folder.                 |
-| your tests                           | including the restart test above                                                  |
+| file              | what it is                                                          |
+| ----------------- | ------------------------------------------------------------------- |
+| the app           | source, organized however you and your agent see fit                 |
+| `README.md`       | what the app is, how to start it, how to exercise the main features  |
+| `REFLECTION.md`   | five questions, answered by hand. The template is in this folder.    |
+| your tests        | including the restart test above                                     |
+
+**The design file lives at the top of your repository, not in this folder.** Superpowers writes
+it to `docs/superpowers/specs/`, beside `ps1-data-analysis` and `ps2-web-app` rather than inside
+either. That is where it belongs and that is where it gets graded from. Leave it there.
 
 **The design file is the spec you approved, not a description written afterwards.** Those read
 differently and it is easy to tell them apart. A spec says what the app will do and what was
@@ -82,8 +84,6 @@ I don't have a check for whether you use AI for this and there is no direct pena
 There are no marks for length. A few sentences for each question is good.
 
 ## Grading
-
-Automated, based on what you hand in.
 
 | criterion                                                                        | share |
 | -------------------------------------------------------------------------------- | ----- |
