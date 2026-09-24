@@ -22,6 +22,8 @@ Handing something in means committing it here and pushing.
 
 - [`ps1-data-analysis`](ps1-data-analysis/INSTRUCTIONS.md): Problem Set 1, Data Analysis and
   Testing. Start with its `INSTRUCTIONS.md`.
+- [`ps2-web-app`](ps2-web-app/INSTRUCTIONS.md): Problem Set 2, React App with SQL Backend. An
+  app of your own choosing. Start with its `INSTRUCTIONS.md`.
 
 The rest arrive the same way, each as a folder, before they are due.
 
