@@ -49,15 +49,36 @@ ignored-build setting to stop it if it bothers you.
 **This part carries no marks.** It's the recommended first step, because it gets the deploy
 working with the sign-in question made as small as possible. You can do it this weekend, before you are ready to do Part B. Part B replaces it.
 
+**Start with Superpowers**, in Thursday's lab: a design for deploying your app, all three parts,
+then a plan. Stop before it builds anything.
+
+**Before you approve the plan, ask your agent these four questions**, and read each answer against
+the plan. If the plan doesn't say, that is the answer, and the plan needs changing.
+
+1. Will the data survive a redeploy?
+2. Does production get a database of its own?
+3. Where does each secret live?
+4. Does a deploy wait for the tests?
+
+Then let it build. The plan should get you to these:
+
 1. **Deploy all three parts**: frontend, backend and database, each where your plan from Tuesday
    puts it. If your PS2 app keeps its data in a SQLite file, as most of yours did, re-read the database-hosting topic
    before you deploy. A host that wipes its disk on every redeploy wipes that file with it. I encourage you to switch from using SQLite to using a hosted DBMS such as Postgres.
-2. **Make it deploy itself on every push to `main`.** Push a small visible change and see it show
-   up in the live app, rather than taking the agent's or the host's word for it.
+2. **Make it deploy itself on every push to `main`.**
 3. **Put every backend route behind HTTP basic auth**: one username and one password. The
    frontend's pages may load without it; they hold no data.
 
-**Passwrods are secret, and secrets never go in a file or in the chat.** This is the
+**Once it's live, check it yourself**, rather than taking the agent's or the host's word for it:
+
+1. Push a small visible change, and see it show up in the live app.
+2. Add something through the live app, push a change, and see that it is still there.
+3. Connect your agent to your host, through the host's CLI or MCP server, signing in yourself.
+   Then do something in the live app and have the agent show you the host's log lines for that
+   request. When something breaks later, this is what lets the agent find out why from the host,
+   instead of guessing from your code.
+
+**Passwords are secret, and secrets never go in a file or in the chat.** This is the
 deploy-config topic, applied to your own app:
 
 - **You** put each secret into your host's settings yourself, in the host's web dashboard, then tell
