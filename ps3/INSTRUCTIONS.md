@@ -108,8 +108,9 @@ Then let it build. The plan should get you to these:
 1. **Replace basic auth with sign-in through Google or GitHub**, using OAuth. You register your
    app with Google or GitHub, which gives you a client ID and a client secret. The client secret
    is a secret, under the same rules as above. Signing in on localhost and signing in on the live
-   app need different redirect URLs. GitHub allows only one per registered app, so with GitHub
-   you will probably register two: one for development, one for production.
+   app need different redirect URLs. Add both to the one registration: Google and GitHub each
+   accept several (GitHub raised its limit to 10 in August 2026, so older advice to register a
+   second app for production is out of date).
 
    **Pick one provider, not both.** Think about who will use your app, and which they are more
    likely to have already: a Google account or a GitHub account. Supporting both earns nothing
