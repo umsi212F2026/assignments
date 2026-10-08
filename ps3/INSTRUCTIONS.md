@@ -92,6 +92,19 @@ deploy-config topic, applied to your own app:
 
 **Study the authentication topic for Tuesday 10/13's class before you start this part.**
 
+**Start with Superpowers again**, in Tuesday's lab: a design for adding sign-in and your levels,
+then a plan. Stop before it builds anything.
+
+**Before you approve the plan, ask your agent these four questions**, and read each answer against
+the plan:
+
+1. Who registers the app with Google or GitHub?
+2. What are the redirect URLs, for localhost and for the live app?
+3. Where does the client secret go?
+4. What does the app ask the provider for, and does it need all of it?
+
+Then let it build. The plan should get you to these:
+
 1. **Replace basic auth with sign-in through Google or GitHub**, using OAuth. You register your
    app with Google or GitHub, which gives you a client ID and a client secret. The client secret
    is a secret, under the same rules as above. Signing in on localhost and signing in on the live
@@ -104,6 +117,16 @@ deploy-config topic, applied to your own app:
    **A rule enforced only in React is not enforced.** Anyone can open the browser's developer
    tools and send the request React would have refused to send. The server has to enforce.
 3. **Write the levels down** as a table in `DEPLOY.md`, below.
+
+**Adding users changes your database's shape**: a table of users, and probably a user id on what
+the app records. Your production database won't change on its own when you deploy. Ask your agent
+how the new tables and columns get there without losing the rows already in them, and after the
+deploy, check that the data you added in Part A is still there.
+
+**Once it's live, check it yourself** by sending requests, not by looking at the page:
+
+1. A request to your `Protected:` path without signing in is refused, with 401.
+2. A classmate signs in, tries one of the owner's actions, and is refused, with 403.
 
 ## The three things that are fixed
 
