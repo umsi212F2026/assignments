@@ -12,7 +12,7 @@ is allowed to do what; you'll do that after Tuesday 10/13's class.
 
 Use the hosts you chose and signed up for in Tuesday 10/6's lab. (complete the activities and lab described in the l-11 and l-12 lecture slides first before you do this problem set.)
 
-If you're still using the U-M API key, I strongly encourage you to switch over to a private GitHub account before doing this problem set. It will go faster and with less frustration. See the Canvas announcement about how to do that.
+If you're still using the U-M API key, I strongly encourage you to switch over to a private ChatGPT account before doing this problem set. It will go faster and with less frustration. See the Canvas announcement about how to do that.
 
 ## Which app
 
