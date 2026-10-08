@@ -110,6 +110,10 @@ Then let it build. The plan should get you to these:
    is a secret, under the same rules as above. Signing in on localhost and signing in on the live
    app need different redirect URLs. GitHub allows only one per registered app, so with GitHub
    you will probably register two: one for development, one for production.
+
+   **Pick one provider, not both.** Think about who will use your app, and which they are more
+   likely to have already: a Google account or a GitHub account. Supporting both earns nothing
+   extra.
 2. **Decide on at least two levels of authorization**, and enforce them **on the server**. What
    the levels are is your design. For example: you, as the owner, can add, change and remove the
    app's content, and anyone else who signs in can use it and sees only their own activity.
