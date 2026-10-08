@@ -8,11 +8,11 @@ every time you push to `main`. At the end you add it to the class showcase with 
 
 There are two parts, both due at the same time. Part A gets the app online behind a single
 password. You'll do that first. Part B replaces that password with sign-in through Google or GitHub, and decides who
-is allowed to do what; you'll do that after Tuesday 10/16's class.
+is allowed to do what; you'll do that after Tuesday 10/13's class.
 
-Use the hosts you chose and signed up for in Tuesday 10/9's lab. (complete the activities and lab described in the l-11 and l-12 lecture slides first before you do this problem set.)
+Use the hosts you chose and signed up for in Tuesday 10/6's lab. (complete the activities and lab described in the l-11 and l-12 lecture slides first before you do this problem set.)
 
-If you're still using the U-M API key, I strongly encourage you to switch over to a private GitHub account before doing this problem set. It will be go faster and with less frustration. See the Canvas announcement about how to do that.
+If you're still using the U-M API key, I strongly encourage you to switch over to a private GitHub account before doing this problem set. It will go faster and with less frustration. See the Canvas announcement about how to do that.
 
 ## Which app
 
