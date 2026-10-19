@@ -49,9 +49,9 @@ install, like the example's, is the simplest. A React app is a natural choice, t
 
 ## The README
 
-Your simulation goes in `ps4/`, beside `tennis-example/`, with a `README.md` in `ps4/` that has
-these six sections, with these headings, in this order. The tennis example's README has the
-same six, and is the model to follow.
+Your simulation goes in `ps4/`, beside `tennis-example/`. Fill in the `README.md` already in
+`ps4/`: it has these six sections, with these headings, in this order, and you keep them. The
+tennis example's README has the same six, and is the model to follow.
 
 1. **`## Question`**: your question.
 2. **`## How to run`**: the commands to run the page, starting from a fresh clone of your
