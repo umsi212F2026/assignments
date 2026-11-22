@@ -54,8 +54,8 @@ sign-in only if the app keeps per-user data.
 PS5's change record is not required. The two rounds take its place.
 
 **A deployed project is graded live.** When the grader runs, the site must be running the work
-you submitted, with both rounds' features in it. A free tier that sleeps is fine; one that has
-expired is not.
+you submitted, with both rounds' features in it, so keep it running until grades are out. A
+free tier that sleeps is fine; one that has expired is not.
 
 ### Negotiated terms
 
@@ -74,7 +74,8 @@ does not agree to your proposal, you are on the standard path.
 **Once your terms are agreed**, commit them, with the instructor's reply, as `project/TERMS.md`
 in your assignments repository. The grader will read the rubric from there, and the instructor
 will grade your project against it. When you start the project, tell your agent the instructor
-has agreed negotiated terms.
+has agreed negotiated terms. If your terms are agreed after you have started, change `Kind:` in
+`project/SUBMIT.md` to `negotiated`.
 
 ## Starting it
 
@@ -99,6 +100,10 @@ copy starts with no git history, which is fine: the base is the "before" that yo
 measured against. **Before it creates a public repository, your agent will show you its name
 and what will be copied into it, and wait for your yes.** Anything you push there is public for
 good.
+
+**If your extension goes in `project/` here and its site is already deployed** from the problem
+set's folder, change the root directory in your host's settings to `project/`, so the live site
+runs the project's copy from then on.
 
 A new public repository starts with two files from this folder: `AGENTS.md`, which tells your
 agent when to offer to record a round, and `ROUNDS.md`, your record.
@@ -242,10 +247,10 @@ to you.
 | ----------------------------------------------------- | -------------------------------------------------- |
 | where your work is, and your showcase pull request    | `project/SUBMIT.md` in this repository             |
 | the project, with its base and both rounds            | your public repository, or `project/` here          |
-| the record                                            | `ROUNDS.md` at the top of the project              |
-| each round's spec and plan                            | `docs/superpowers/specs/` and `docs/superpowers/plans/` |
+| the record                                            | `ROUNDS.md` at the top of the project, `project/ROUNDS.md` for a project kept here |
+| each round's spec and plan                            | `docs/superpowers/specs/` and `docs/superpowers/plans/` in the project, `project/docs/superpowers/` for a project kept here |
 | for a workflow, the report and its diagram            | `docs/index.html` (or `docs/index.md`) and `docs/workflow.png`, on GitHub Pages |
-| for a deployed project, the README                    | `README.md` at the top of the project              |
+| for a deployed project, the README                    | `README.md` at the top of the project, `project/README.md` for a project kept here |
 | the running site, for a deployed project              | at your card's `projectUrl`                        |
 | the showcase pull request                             | open or merged on `umsi212F2026/student-showcase`  |
 | for negotiated terms, the agreed terms                | `project/TERMS.md` in this repository              |

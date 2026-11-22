@@ -20,6 +20,9 @@ the project folder, both committed after the base, then the commits that impleme
 committed, not while it is still being built, and not after a commit that only changes a spec or
 a plan.
 
+**Commit the spec and the plan on their own, before writing any code that implements them.**
+Code committed before its plan's commit can never be part of that round.
+
 Whether to offer is your call. Whether the round goes in the record is the student's:
 `record-round` asks them, and you never decide that for them or write its own-words parts
 yourself.
@@ -58,9 +61,10 @@ Public material such as job postings can go in as it is. Then do what they say.
   specs and plans inside the project folder.
 - for a workflow, the report: `docs/index.html`, or `docs/index.md` if the student writes it in
   Markdown, served by GitHub Pages from `/docs` on `main`. The diagram image and the links must be
-  in the page as served, not added by a script, because the check reads the served page. For a
-  plain-HTML report, add an empty `docs/.nojekyll`, so that GitHub Pages does not run Jekyll over
-  `docs/superpowers/`, where a `{{` or `{%` in a plan can fail the build.
+  in the page as served, not added by a script, because the check reads the served page. GitHub
+  Pages runs Jekyll over `docs/`, and a `{{` or `{%` in a plan under `docs/superpowers/` can fail
+  the build. For a plain-HTML report, add an empty `docs/.nojekyll`. For a Markdown report, which
+  needs Jekyll to render it, add `exclude: [superpowers]` to `docs/_config.yml` instead.
 - for a workflow, the diagram as a PNG: `docs/workflow.png`, rendered from the BPMN file with
   `<course-materials>/workflows/diagram/tools/render.mjs`
 - for a workflow, skills: `skills/<name>/SKILL.md`
