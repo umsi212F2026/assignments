@@ -15,8 +15,8 @@ repository.
 
 where `<course-materials>` is the folder `~/.codex/AGENTS.md` names.
 
-A round is a spec in `docs/superpowers/specs/` and a plan in `docs/superpowers/plans/`, both
-committed after the base, then the commits that implement them. Offer once the implementation is
+A round is a spec in `docs/superpowers/specs/` and a plan in `docs/superpowers/plans/` inside
+the project folder, both committed after the base, then the commits that implement them. Offer once the implementation is
 committed, not while it is still being built, and not after a commit that only changes a spec or
 a plan.
 
@@ -50,9 +50,17 @@ Public material such as job postings can go in as it is. Then do what they say.
 ## Where things go
 
 - the record: `ROUNDS.md`, through `rounds.mjs` only
-- each round's spec and plan: `docs/superpowers/specs/` and `docs/superpowers/plans/`, where
-  Superpowers puts them
-- for a workflow, the report: `docs/index.html`, served by GitHub Pages from `/docs` on `main`
+- each round's spec and plan: `docs/superpowers/specs/` and `docs/superpowers/plans/` inside
+  the project folder. **For a project kept in `project/`**, that is
+  `project/docs/superpowers/specs/` and `project/docs/superpowers/plans/`, not the
+  `docs/superpowers/` at the top of the assignments repository where Superpowers would put them:
+  when brainstorming and planning, tell Superpowers to write them there. `rounds.mjs` sees only
+  specs and plans inside the project folder.
+- for a workflow, the report: `docs/index.html`, or `docs/index.md` if the student writes it in
+  Markdown, served by GitHub Pages from `/docs` on `main`. The diagram image and the links must be
+  in the page as served, not added by a script, because the check reads the served page. For a
+  plain-HTML report, add an empty `docs/.nojekyll`, so that GitHub Pages does not run Jekyll over
+  `docs/superpowers/`, where a `{{` or `{%` in a plan can fail the build.
 - for a workflow, the diagram as a PNG: `docs/workflow.png`, rendered from the BPMN file with
   `<course-materials>/workflows/diagram/tools/render.mjs`
 - for a workflow, skills: `skills/<name>/SKILL.md`

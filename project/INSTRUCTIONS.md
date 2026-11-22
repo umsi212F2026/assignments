@@ -105,7 +105,7 @@ agent when to offer to record a round, and `ROUNDS.md`, your record.
 
 **Then get your base working, and name it.** When the base is in place, committed and, where
 required, deployed, find that commit's hash (`git log --oneline` shows it, or ask your agent)
-and replace the placeholder on the first line of `ROUNDS.md`, so it reads `Base: <that hash>`.
+and replace the placeholder on the `Base:` line of `ROUNDS.md`, so it reads `Base: <that hash>`.
 A commit cannot contain its own hash, so this line will go in a later commit. If you started
 work early somewhere else, copy it across first: work done before the base is part of the base.
 
@@ -113,8 +113,13 @@ work early somewhere else, copy it across first: work done before the base is pa
 
 **A round is a Superpowers spec and plan, committed, then the commits that implement them,
 adding a new feature beyond the base.** Superpowers puts the spec in `docs/superpowers/specs/`
-and the plan in `docs/superpowers/plans/`. Both must be committed after your base, and the
-implementing commits after the plan.
+and the plan in `docs/superpowers/plans/`, inside the project folder. Both must be committed
+after your base, and the implementing commits after the plan.
+
+**If your project is in `project/` here, its specs and plans go in `project/docs/superpowers/`**,
+not in `docs/superpowers/` at the top of this repository, where PS2 told you to leave them. Only
+specs and plans inside the project folder can be rounds. Your agent will tell Superpowers to
+write them there.
 
 **Not a round:**
 
@@ -146,7 +151,8 @@ with the commits that look like their implementation, and ask which ones you wan
 ## The report
 
 **A project whose showcase card links to a report**, a workflow on your laptop, needs a web page
-served by GitHub Pages from its public repository. Put it at `docs/index.html`. Its outline is
+served by GitHub Pages from its public repository. Put it at `docs/index.html`, or
+`docs/index.md` if you write it in Markdown. Its outline is
 fixed, so every report reads the same way to a grader and to a visitor:
 
 1. **What the workflow does, and for whom**, in a paragraph.
@@ -166,7 +172,8 @@ file's page on GitHub, pressing `y` turns the address into one pinned to the cur
 The commit has to be pushed for the link to work.
 
 How the page is built is up to you and your agent. Plain HTML, or Markdown that GitHub Pages
-renders, are both fine.
+renders, are both fine. **The diagram image and the links must be in the page itself**, not
+added by a script when it loads, because the check reads the page as GitHub Pages serves it.
 
 **To turn on GitHub Pages:** on GitHub, open the repository's **Settings**, then **Pages**.
 Under **Build and deployment**, set the source to **Deploy from a branch**, the branch to
@@ -237,7 +244,7 @@ to you.
 | the project, with its base and both rounds            | your public repository, or `project/` here          |
 | the record                                            | `ROUNDS.md` at the top of the project              |
 | each round's spec and plan                            | `docs/superpowers/specs/` and `docs/superpowers/plans/` |
-| for a workflow, the report and its diagram            | `docs/index.html` and `docs/workflow.png`, on GitHub Pages |
+| for a workflow, the report and its diagram            | `docs/index.html` (or `docs/index.md`) and `docs/workflow.png`, on GitHub Pages |
 | for a deployed project, the README                    | `README.md` at the top of the project              |
 | the running site, for a deployed project              | at your card's `projectUrl`                        |
 | the showcase pull request                             | open or merged on `umsi212F2026/student-showcase`  |
