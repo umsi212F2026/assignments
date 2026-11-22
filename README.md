@@ -30,6 +30,8 @@ Handing something in means committing it here and pushing.
   from a web page. Start with its `INSTRUCTIONS.md`.
 - [`ps5`](ps5/INSTRUCTIONS.md): Problem Set 5, Putting an Agent in a Workflow. A workflow you
   would use, with an agent doing one of its steps. Start with its `INSTRUCTIONS.md`.
+- [`project`](project/INSTRUCTIONS.md): the Final Project, Two More Rounds. Two new features on
+  something you built this term, or on something new. Start with its `INSTRUCTIONS.md`.
 
 The rest arrive the same way, each as a folder, before they are due.
 
