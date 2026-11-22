@@ -26,4 +26,4 @@ On PS1, why a different language for the second implementation, rather than a se
 
 ### q-similarity-definition
 
-On PS1 task 3, what was your alternative definition of similarity between a pair of users? Say why it gives a more interesting result about the number of movies rated in common.
+On PS1 task 3, what was your alternative definition of similarity between a pair of users? What does the plain count of movies rated in common get wrong, and how does your measure fix it?
